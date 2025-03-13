@@ -22,7 +22,7 @@ export default function Home() {
   const achievements = [
     "BIKED 3000KM CROSS COUNTRY IN 30 DAYS",
     "WORKED IN THE YUKON WILDERNESS",
-    "SPOKE AT ROUND TABLES AT TIK TOK HQ",
+    "LED DISCUSSIONS AT TIK TOK'S OFFICE",
     "GAINED 100K+ USERS ACROSS FOUNDED PLATFORMS",
     "BUILT PRODUCTS FOR NESTLE AND FIFA"
   ];
@@ -97,70 +97,74 @@ export default function Home() {
     <div className="snap-y snap-mandatory h-screen w-full overflow-y-scroll scroll-smooth bg-white">
       {/* Section 1: Hero Section - Bold Introduction */}
       <section className="snap-start h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-white via-yellow-50 to-amber-50 relative overflow-hidden">
-        {/* Dynamic background elements */}
+        {/* Dynamic background elements - reduced opacity and subtler gradients */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500"></div>
-          <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400"></div>
-          <div className={`absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-yellow-300 opacity-0 ${isLoaded ? 'animate-fade-in-slow opacity-10' : ''}`}></div>
-          <div className={`absolute bottom-1/3 right-1/3 w-96 h-96 rounded-full bg-amber-300 opacity-0 ${isLoaded ? 'animate-fade-in-slow opacity-10 delay-300' : ''}`}></div>
-          <div className={`absolute top-1/2 right-1/4 w-80 h-80 rounded-full bg-orange-300 opacity-0 ${isLoaded ? 'animate-fade-in-slow opacity-10 delay-500' : ''}`}></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 opacity-70"></div>
+          <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 opacity-70"></div>
+          <div className={`absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-yellow-200 opacity-0 ${isLoaded ? 'animate-fade-in-slow opacity-5' : ''}`}></div>
+          <div className={`absolute bottom-1/3 right-1/3 w-96 h-96 rounded-full bg-amber-200 opacity-0 ${isLoaded ? 'animate-fade-in-slow opacity-5 delay-300' : ''}`}></div>
+          <div className={`absolute top-1/2 right-1/4 w-80 h-80 rounded-full bg-orange-200 opacity-0 ${isLoaded ? 'animate-fade-in-slow opacity-5 delay-500' : ''}`}></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-8 py-12 flex flex-col items-center z-10">
-          {/* Dramatic photo */}
-          <div className={`w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-amber-400 shadow-2xl mb-8 transform hover:scale-105 transition duration-300 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100' : ''}`}>
-            <Image 
-              src="/images/jeffrey-cutout.png" 
-              alt="Jeffrey Lin" 
-              width={400} 
-              height={400}
-              className="w-full h-full object-cover"
-              priority
-            />
+        <div className="max-w-7xl w-full mx-auto px-8 py-12 flex flex-col md:flex-row items-center md:items-center md:justify-center pl-0 md:pl-16 lg:pl-54 z-10">
+          {/* Text content - adjusted for better centering and moved right */}
+          <div className="md:w-1/2 flex flex-col items-center md:items-start md:justify-center md:pr-8">
+            {/* More approachable greeting - FURTHER INCREASED SIZE */}
+            <h1 className={`text-8xl md:text-9xl font-bold mb-4 text-gray-800 tracking-tight text-center md:text-left opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
+              Hi! I'm Jeffrey.
+            </h1>
+            
+            {/* Introduction to achievements - FURTHER INCREASED SIZE */}
+            <p className={`text-3xl md:text-4xl mb-4 text-amber-600 font-medium text-center md:text-left opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-500' : ''}`}>
+              Previously, I've...
+            </p>
+            
+            {/* Rotating achievements showcase - WITH UNIQUE EMOJIS */}
+            <div className={`relative h-32 w-full max-w-3xl mb-16 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-600' : ''}`}>
+              {achievements.map((achievement, index) => {
+                // Assign a unique emoji to each achievement
+                const emojis = ["🚴", "🏔️", "🎬", "👥", "🏆"];
+                const emoji = emojis[index];
+                
+                return (
+                  <div 
+                    key={index}
+                    className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+                      index === currentAchievement 
+                        ? "opacity-100 transform translate-y-0" 
+                        : "opacity-0 transform translate-y-12"
+                    }`}
+                  >
+                    <p className="text-3xl md:text-4xl font-extrabold text-gray-800 flex items-center">
+                      <span className="text-5xl mr-4">{emoji}</span>
+                      {achievement}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           
-          {/* Bold name */}
-          <h1 className={`text-6xl md:text-8xl font-black mb-6 text-gray-800 tracking-tighter text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-600 via-yellow-500 to-orange-600 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
-            JEFFREY LIN
-          </h1>
-          
-          {/* Minimal tagline */}
-          <p className={`text-2xl md:text-3xl mb-8 text-gray-600 font-light italic text-center opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-400' : ''}`}>
-            VISIONARY. GENIUS. UNPARALLELED.
-          </p>
-          
-          {/* Rotating achievements showcase */}
-          <div className={`relative h-16 w-full max-w-3xl mb-12 overflow-hidden opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-600' : ''}`}>
-            {achievements.map((achievement, index) => (
-              <div 
-                key={index}
-                className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out ${
-                  index === currentAchievement 
-                    ? "opacity-100 transform translate-y-0" 
-                    : "opacity-0 transform translate-y-8"
-                }`}
-              >
-                <div className="bg-white px-8 py-4 rounded-lg border-2 border-amber-400 shadow-lg">
-                  <p className="text-xl font-bold text-gray-800 flex items-center">
-                    <span className="text-amber-500 mr-3 text-2xl">★</span>
-                    {achievement}
-                  </p>
+          {/* Dramatic photo - moved much higher */}
+          <div className="md:w-1/2 flex justify-center md:justify-start items-center md:items-start md:-mt-32 md:ml-4">
+            <div className={`relative w-auto h-auto md:max-w-lg lg:max-w-xl overflow-visible mb-8 md:mb-0 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100' : ''}`}>
+              {/* Blended background effect */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-white via-yellow-50 to-amber-50 blur-xl opacity-80 z-0"></div>
+              
+              {/* Image with subtle shadow, gradient fade at bottom, and increased saturation */}
+              <div className="relative z-10 transform md:-translate-y-16">
+                <div className="relative">
+                  <Image 
+                    src="/jeffrey6.png" 
+                    alt="Jeffrey Lin" 
+                    width={850} 
+                    height={1050}
+                    className="w-auto h-auto max-h-[38rem] object-contain drop-shadow-md transform scale-115"
+                    style={{ filter: 'saturate(1.25)' }}
+                    priority
+                  />
                 </div>
               </div>
-            ))}
-            
-            {/* Achievement indicator dots */}
-            <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              {achievements.map((_, index) => (
-                <button 
-                  key={index}
-                  onClick={() => setCurrentAchievement(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentAchievement ? "bg-amber-500 scale-125" : "bg-amber-200"
-                  }`}
-                  aria-label={`View achievement ${index + 1}`}
-                />
-              ))}
             </div>
           </div>
         </div>
@@ -178,25 +182,25 @@ export default function Home() {
 
       {/* Section 2: Experiences - Professional Achievements */}
       <section id="experiences" ref={experiencesRef} className="snap-start h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 via-amber-50 to-yellow-50 relative">
-        {/* Decorative elements */}
+        {/* Decorative elements - more subtle */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500"></div>
-          <div className={`absolute top-20 left-20 w-40 h-40 border border-yellow-200 rounded-full opacity-0 ${experiencesVisible ? 'animate-fade-in opacity-100' : ''}`}></div>
-          <div className={`absolute bottom-40 right-20 w-60 h-60 border border-amber-200 rounded-full opacity-0 ${experiencesVisible ? 'animate-fade-in opacity-100 delay-300' : ''}`}></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 opacity-70"></div>
+          <div className={`absolute top-20 left-20 w-40 h-40 border border-yellow-200 rounded-full opacity-0 ${experiencesVisible ? 'animate-fade-in opacity-30' : ''}`}></div>
+          <div className={`absolute bottom-40 right-20 w-60 h-60 border border-amber-200 rounded-full opacity-0 ${experiencesVisible ? 'animate-fade-in opacity-30 delay-300' : ''}`}></div>
         </div>
         
         <div className="max-w-6xl mx-auto px-8 py-12 z-10">
           <h2 className={`text-5xl font-bold mb-12 text-gray-800 text-center opacity-0 ${experiencesVisible ? 'animate-slide-up opacity-100' : ''}`}>CAREER <span className="text-amber-500">TRIUMPHS</span></h2>
           
-          <div className={`bg-white p-8 rounded-lg border border-yellow-200 shadow-xl mb-12 opacity-0 ${experiencesVisible ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
+          <div className={`bg-white/90 p-8 rounded-lg border border-yellow-200 shadow-lg mb-12 opacity-0 ${experiencesVisible ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
             <p className="italic text-2xl text-amber-600 mb-4 text-center font-light">
               "My professional trajectory has been nothing short of extraordinary—a masterclass in excellence and innovation."
             </p>
           </div>
           
           <div className="space-y-8">
-            {/* Experience Item 1 */}
-            <div className={`flex flex-col md:flex-row gap-6 bg-white p-8 rounded-lg border border-yellow-200 shadow-lg opacity-0 ${experiencesVisible ? 'animate-slide-up opacity-100 delay-400' : ''}`}>
+            {/* Experience Item 1 - more subtle styling */}
+            <div className={`flex flex-col md:flex-row gap-6 bg-white/90 p-8 rounded-lg border border-yellow-200 shadow-md opacity-0 ${experiencesVisible ? 'animate-slide-up opacity-100 delay-400' : ''}`}>
               <div className="md:w-1/4">
                 <h3 className="font-bold text-2xl text-gray-800">ELITE COMPANY</h3>
                 <p className="text-amber-500 text-lg">2020 - Present</p>
@@ -216,8 +220,8 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Experience Item 2 */}
-            <div className={`flex flex-col md:flex-row gap-6 bg-white p-8 rounded-lg border border-amber-200 shadow-lg opacity-0 ${experiencesVisible ? 'animate-slide-up opacity-100 delay-600' : ''}`}>
+            {/* Experience Item 2 - more subtle styling */}
+            <div className={`flex flex-col md:flex-row gap-6 bg-white/90 p-8 rounded-lg border border-amber-200 shadow-md opacity-0 ${experiencesVisible ? 'animate-slide-up opacity-100 delay-600' : ''}`}>
               <div className="md:w-1/4">
                 <h3 className="font-bold text-2xl text-gray-800">PRESTIGIOUS FIRM</h3>
                 <p className="text-orange-500 text-lg">2018 - 2020</p>
@@ -251,12 +255,12 @@ export default function Home() {
 
       {/* Section 3: Projects/Portfolio */}
       <section id="projects" ref={projectsRef} className="snap-start h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-amber-50 via-orange-50 to-amber-50 relative">
-        {/* Decorative elements */}
+        {/* Decorative elements - more subtle */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-400"></div>
-          <div className={`grid grid-cols-8 grid-rows-8 gap-4 absolute inset-0 opacity-0 ${projectsVisible ? 'animate-fade-in opacity-5 delay-300' : ''}`}>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-400 opacity-70"></div>
+          <div className={`grid grid-cols-8 grid-rows-8 gap-4 absolute inset-0 opacity-0 ${projectsVisible ? 'animate-fade-in opacity-3 delay-300' : ''}`}>
             {Array(64).fill().map((_, i) => (
-              <div key={i} className="border border-amber-300"></div>
+              <div key={i} className="border border-amber-200"></div>
             ))}
           </div>
         </div>
@@ -264,15 +268,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8 py-12 z-10">
           <h2 className={`text-5xl font-bold mb-12 text-gray-800 text-center opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100' : ''}`}>SIGNATURE <span className="text-orange-500">WORKS</span></h2>
           
-          <div className={`bg-white p-8 rounded-lg border border-amber-200 shadow-xl mb-12 max-w-4xl mx-auto opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
+          <div className={`bg-white/90 p-8 rounded-lg border border-amber-200 shadow-lg mb-12 max-w-4xl mx-auto opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
             <p className="italic text-2xl text-orange-500 text-center font-light">
               "Each project is a masterpiece—a perfect synthesis of visionary design and technical brilliance that few can comprehend, let alone replicate."
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Project Card 1 */}
-            <div className={`bg-white rounded-lg border border-yellow-200 shadow-xl overflow-hidden hover:border-yellow-400 transition duration-300 group opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-400' : ''}`}>
+            {/* Project Card 1 - more subtle styling */}
+            <div className={`bg-white/90 rounded-lg border border-yellow-200 shadow-md overflow-hidden hover:border-yellow-400 transition duration-300 group opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-400' : ''}`}>
               <div className="h-56 bg-gradient-to-br from-yellow-100 to-amber-100 relative overflow-hidden">
                 {/* Project image would go here */}
                 <div className="absolute inset-0 flex items-center justify-center text-gray-800 text-xl font-bold">
@@ -292,14 +296,14 @@ export default function Home() {
                   <span className="px-3 py-1 bg-yellow-100 border border-yellow-200 text-yellow-700 rounded-md text-sm font-medium">Revolutionary Tech</span>
                   <span className="px-3 py-1 bg-amber-100 border border-amber-200 text-amber-700 rounded-md text-sm font-medium">Genius UX</span>
                 </div>
-                <a href="#" className="inline-block px-6 py-3 bg-gradient-to-r from-yellow-500 to-amber-500 text-white font-bold rounded-md hover:from-yellow-600 hover:to-amber-600 transition shadow-md">
+                <a href="#" className="inline-block px-6 py-3 bg-yellow-500 text-white font-bold rounded-md hover:bg-yellow-600 transition shadow-md">
                   EXPERIENCE GREATNESS
                 </a>
               </div>
             </div>
             
-            {/* Project Card 2 */}
-            <div className={`bg-white rounded-lg border border-amber-200 shadow-xl overflow-hidden hover:border-amber-400 transition duration-300 group opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-600' : ''}`}>
+            {/* Project Card 2 - more subtle styling */}
+            <div className={`bg-white/90 rounded-lg border border-amber-200 shadow-md overflow-hidden hover:border-amber-400 transition duration-300 group opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-600' : ''}`}>
               <div className="h-56 bg-gradient-to-br from-amber-100 to-orange-100 relative overflow-hidden">
                 {/* Project image would go here */}
                 <div className="absolute inset-0 flex items-center justify-center text-gray-800 text-xl font-bold">
@@ -316,14 +320,14 @@ export default function Home() {
                   <span className="px-3 py-1 bg-amber-100 border border-amber-200 text-amber-700 rounded-md text-sm font-medium">Technical Marvel</span>
                   <span className="px-3 py-1 bg-orange-100 border border-orange-200 text-orange-700 rounded-md text-sm font-medium">Design Excellence</span>
                 </div>
-                <a href="#" className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold rounded-md hover:from-amber-600 hover:to-orange-600 transition shadow-md">
+                <a href="#" className="inline-block px-6 py-3 bg-amber-500 text-white font-bold rounded-md hover:bg-amber-600 transition shadow-md">
                   WITNESS BRILLIANCE
                 </a>
               </div>
             </div>
             
-            {/* Project Card 3 */}
-            <div className={`bg-white rounded-lg border border-orange-200 shadow-xl overflow-hidden hover:border-orange-400 transition duration-300 group opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-800' : ''}`}>
+            {/* Project Card 3 - more subtle styling */}
+            <div className={`bg-white/90 rounded-lg border border-orange-200 shadow-md overflow-hidden hover:border-orange-400 transition duration-300 group opacity-0 ${projectsVisible ? 'animate-slide-up opacity-100 delay-800' : ''}`}>
               <div className="h-56 bg-gradient-to-br from-orange-100 to-yellow-100 relative overflow-hidden">
                 {/* Project image would go here */}
                 <div className="absolute inset-0 flex items-center justify-center text-gray-800 text-xl font-bold">
@@ -340,7 +344,7 @@ export default function Home() {
                   <span className="px-3 py-1 bg-orange-100 border border-orange-200 text-orange-700 rounded-md text-sm font-medium">Algorithmic Genius</span>
                   <span className="px-3 py-1 bg-yellow-100 border border-yellow-200 text-yellow-700 rounded-md text-sm font-medium">Scalable Perfection</span>
                 </div>
-                <a href="#" className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold rounded-md hover:from-orange-600 hover:to-yellow-600 transition shadow-md">
+                <a href="#" className="inline-block px-6 py-3 bg-orange-500 text-white font-bold rounded-md hover:bg-orange-600 transition shadow-md">
                   BEHOLD GREATNESS
                 </a>
               </div>
@@ -361,11 +365,11 @@ export default function Home() {
 
       {/* Section 4: Contact - The Grand Finale */}
       <section id="contact" ref={contactRef} className="snap-start h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-50 relative">
-        {/* Decorative elements */}
+        {/* Decorative elements - more subtle */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 via-yellow-500 to-amber-400"></div>
-          <div className={`absolute top-1/4 right-1/4 w-72 h-72 rounded-full border-2 border-orange-200 opacity-0 ${contactVisible ? 'animate-fade-in opacity-100 delay-300' : ''}`}></div>
-          <div className={`absolute bottom-1/3 left-1/3 w-48 h-48 rounded-full border-2 border-yellow-200 opacity-0 ${contactVisible ? 'animate-fade-in opacity-100 delay-500' : ''}`}></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 via-yellow-400 to-amber-400 opacity-70"></div>
+          <div className={`absolute top-1/4 right-1/4 w-72 h-72 rounded-full border border-orange-200 opacity-0 ${contactVisible ? 'animate-fade-in opacity-30 delay-300' : ''}`}></div>
+          <div className={`absolute bottom-1/3 left-1/3 w-48 h-48 rounded-full border border-yellow-200 opacity-0 ${contactVisible ? 'animate-fade-in opacity-30 delay-500' : ''}`}></div>
         </div>
         
         <div className="max-w-6xl mx-auto px-8 py-12 z-10">
@@ -373,15 +377,15 @@ export default function Home() {
             CONNECT WITH <span className="text-orange-500">GREATNESS</span>
           </h2>
           
-          <div className={`bg-white p-8 rounded-lg border border-orange-200 shadow-xl mb-12 max-w-4xl mx-auto opacity-0 ${contactVisible ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
+          <div className={`bg-white/90 p-8 rounded-lg border border-orange-200 shadow-lg mb-12 max-w-4xl mx-auto opacity-0 ${contactVisible ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
             <p className="italic text-2xl text-orange-500 text-center font-light">
               "Opportunities to collaborate with a mind of my caliber are rare. Seize this moment to elevate your vision."
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div className={`bg-white p-8 rounded-lg border border-yellow-200 shadow-xl opacity-0 ${contactVisible ? 'animate-slide-up opacity-100 delay-400' : ''}`}>
+            {/* Contact Form - more subtle styling */}
+            <div className={`bg-white/90 p-8 rounded-lg border border-yellow-200 shadow-lg opacity-0 ${contactVisible ? 'animate-slide-up opacity-100 delay-400' : ''}`}>
               <h3 className="text-3xl font-bold mb-6 text-gray-800">INITIATE CONTACT</h3>
               
               <form className="space-y-6">
@@ -417,16 +421,16 @@ export default function Home() {
                 
                 <button 
                   type="submit"
-                  className="w-full px-8 py-4 bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500 text-white text-xl font-bold rounded-md hover:from-yellow-600 hover:via-amber-600 hover:to-orange-600 transition shadow-xl transform hover:scale-105"
+                  className="w-full px-8 py-4 bg-amber-500 text-white text-xl font-bold rounded-md hover:bg-amber-600 transition shadow-md transform hover:scale-105"
                 >
                   SUBMIT FOR CONSIDERATION
                 </button>
               </form>
             </div>
             
-            {/* Contact Information */}
+            {/* Contact Information - more subtle styling */}
             <div className={`flex flex-col justify-between opacity-0 ${contactVisible ? 'animate-slide-up opacity-100 delay-600' : ''}`}>
-              <div className="bg-white p-8 rounded-lg border border-orange-200 shadow-xl mb-8">
+              <div className="bg-white/90 p-8 rounded-lg border border-orange-200 shadow-lg mb-8">
                 <h3 className="text-3xl font-bold mb-6 text-gray-800">DIRECT CHANNELS</h3>
                 
                 <div className="space-y-6">
@@ -469,23 +473,23 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className={`bg-white p-8 rounded-lg border border-amber-200 shadow-xl opacity-0 ${contactVisible ? 'animate-slide-up opacity-100 delay-800' : ''}`}>
+              <div className={`bg-white/90 p-8 rounded-lg border border-amber-200 shadow-lg opacity-0 ${contactVisible ? 'animate-slide-up opacity-100 delay-800' : ''}`}>
                 <h3 className="text-2xl font-bold mb-4 text-gray-800">SOCIAL PRESENCE</h3>
                 
                 <div className="flex justify-center space-x-6">
-                  <a href="#" className="h-12 w-12 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 flex items-center justify-center text-white transform hover:scale-110 transition">
+                  <a href="#" className="h-12 w-12 rounded-full bg-yellow-500 flex items-center justify-center text-white transform hover:scale-110 transition">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
                     </svg>
                   </a>
                   
-                  <a href="#" className="h-12 w-12 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 flex items-center justify-center text-white transform hover:scale-110 transition">
+                  <a href="#" className="h-12 w-12 rounded-full bg-amber-500 flex items-center justify-center text-white transform hover:scale-110 transition">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                     </svg>
                   </a>
                   
-                  <a href="#" className="h-12 w-12 rounded-full bg-gradient-to-r from-orange-400 to-yellow-500 flex items-center justify-center text-white transform hover:scale-110 transition">
+                  <a href="#" className="h-12 w-12 rounded-full bg-orange-500 flex items-center justify-center text-white transform hover:scale-110 transition">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
