@@ -29,10 +29,7 @@ export default function Projects() {
           <a href="/experiences" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
             experiences
           </a>
-          <a href="#adventures" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
-            adventures
-          </a>
-          <a href="#resume" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
+          <a href="/resume" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
             resume
           </a>
         </div>
@@ -49,16 +46,16 @@ export default function Projects() {
             {/* UWSummit Project */}
             <div className="border-b border-slate-200 pb-12">
               <div className="flex gap-8">
-                <div className="w-1/3">
+                <div className="w-1/2">
                   <Image
-                    src="/images/uwsummit.png"
+                    src="/uwsummit.png"
                     alt="UWSummit Project"
-                    width={400}
-                    height={300}
+                    width={600}
+                    height={500}
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-2/3">
+                <div className="w-1/2">
                   <div className="flex justify-between items-center mb-2">
                     <h2 className="text-3xl font-bold text-slate-800">UWSummit (Acquired at $10,000 valuation) - Social platform</h2>
                     <div className="flex space-x-3">
@@ -92,16 +89,16 @@ export default function Projects() {
             {/* Agility Project */}
             <div className="border-b border-slate-200 pb-12">
               <div className="flex gap-8">
-                <div className="w-1/3">
+                <div className="w-1/2">
                   <Image
-                    src="/images/agility.png"
+                    src="/agility.png"
                     alt="Agility Project"
-                    width={400}
-                    height={300}
+                    width={600}
+                    height={500}
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-2/3">
+                <div className="w-1/2">
                   <div className="flex justify-between items-center mb-2">
                     <h2 className="text-3xl font-bold text-slate-800">Agility - LLM driven Workflow Automation Platform</h2>
                     <div className="flex space-x-3">
@@ -135,16 +132,16 @@ export default function Projects() {
             {/* PackShots Project */}
             <div className="border-b border-slate-200 pb-12">
               <div className="flex gap-8">
-                <div className="w-1/3">
+                <div className="w-1/2">
                   <Image
-                    src="/images/packshots.png"
+                    src="/packshots.png"
                     alt="PackShots Project"
-                    width={400}
-                    height={300}
+                    width={600}
+                    height={500}
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-2/3">
+                <div className="w-1/2">
                   <div className="flex justify-between items-center mb-2">
                     <h2 className="text-3xl font-bold text-slate-800">PackShots - Cross-platform AI-Powered Packing App</h2>
                     <div className="flex space-x-3">
@@ -172,16 +169,16 @@ export default function Projects() {
             {/* CrankFlow Project */}
             <div className="pb-8">
               <div className="flex gap-8">
-                <div className="w-1/3">
+                <div className="w-1/2">
                   <Image
-                    src="/images/crankflow.png"
+                    src="/crankflow.png"
                     alt="CrankFlow Project"
-                    width={400}
-                    height={300}
+                    width={600}
+                    height={500}
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-2/3">
+                <div className="w-1/2">
                   <div className="flex justify-between items-center mb-2">
                     <h2 className="text-3xl font-bold text-slate-800">CrankFlow - B2B Demand Forecasting Platform</h2>
                     <div className="flex space-x-3">

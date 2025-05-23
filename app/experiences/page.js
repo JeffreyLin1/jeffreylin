@@ -29,10 +29,7 @@ export default function Experiences() {
           <a href="/experiences" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
             experiences
           </a>
-          <a href="#adventures" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
-            adventures
-          </a>
-          <a href="#resume" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
+          <a href="/resume" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
             resume
           </a>
         </div>
@@ -184,54 +181,6 @@ export default function Experiences() {
                           <li className="text-lg text-slate-700">Developed data visualization dashboards to track key performance indicators</li>
                           <li className="text-lg text-slate-700">Automated reporting processes, saving team members 10+ hours per week</li>
                           <li className="text-lg text-slate-700">Implemented database optimizations that improved query performance by 40%</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* FIFA Experience */}
-              <div className="relative">
-                <div className="flex gap-8">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gray-500 border-4 border-white shadow-md"></div>
-                  
-                  {/* Timeline Date */}
-                  <div className="w-24 md:w-32 flex items-center justify-end">
-                    <div>
-                      <p className="text-lg font-medium text-slate-700">May 2022</p>
-                      <p className="text-sm text-slate-500">Aug 2022</p>
-                    </div>
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-12">
-                    <div className="flex gap-8">
-                      <div className="w-1/3">
-                        <Image
-                          src="/images/fifa.png"
-                          alt="FIFA Office"
-                          width={400}
-                          height={300}
-                          className="rounded-lg shadow-md"
-                        />
-                      </div>
-                      <div className="w-2/3">
-                        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-3xl font-bold text-slate-800">FIFA</h2>
-                          <div className="flex items-center mt-2 md:mt-0">
-                            <p className="text-lg text-slate-600 italic">Web Development Consultant</p>
-                          </div>
-                        </div>
-                        
-                        <p className="text-lg text-slate-600 italic mb-3">JavaScript, React, Node.js, MongoDB</p>
-                        
-                        <ul className="space-y-2 list-disc pl-5">
-                          <li className="text-lg text-slate-700">Developed web applications for tournament management and fan engagement</li>
-                          <li className="text-lg text-slate-700">Created responsive interfaces that handled peak traffic during major events</li>
-                          <li className="text-lg text-slate-700">Implemented real-time data updates for live match statistics</li>
-                          <li className="text-lg text-slate-700">Collaborated with an international team to deliver solutions across multiple time zones</li>
                         </ul>
                       </div>
                     </div>
