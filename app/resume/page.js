@@ -41,7 +41,7 @@ export default function Resume() {
           {/* PDF Viewer */}
           <div className="w-full h-[calc(100vh-12rem)]">
             <iframe
-              src="/jeffreylinsweresume.pdf"
+              src="/JeffreyLin_AISWE_Resume.pdf"
               className="w-full h-full rounded-lg shadow-lg"
               title="Jeffrey Lin's Resume"
             />
