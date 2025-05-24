@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Navigation from "./components/Navigation";
 
 export default function Home() {
   // State for rotating achievements
@@ -12,7 +13,7 @@ export default function Home() {
   
   // Array of achievements
   const achievements = [
-    "Created, scaled, and sold a viral platform ($10k valuation) 🚀",
+    "Created, scaled, and sold a viral platform (100k + visits, 1k+ users) 🚀",
     "Built B2B tools used by Nestle, FIFA, Autodesk, and more 😉",
     "Managed a welding shop in the Yukon territory 🥶",
     "Led AI-centered discussions at Tik Tok's office 🤖",
@@ -35,20 +36,7 @@ export default function Home() {
       <section className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-50 via-slate-100 to-blue-50 relative overflow-hidden">
         
         {/* Navigation Links */}
-        <div className="absolute top-8 md:top-12 left-0 right-0 flex justify-center space-x-12 z-20">
-          <a href="/" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
-            about
-          </a>
-          <a href="/projects" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
-            projects
-          </a>
-          <a href="/experiences" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
-            experiences
-          </a>
-          <a href="/resume" className="text-xl md:text-2xl text-slate-700 transition-colors duration-300 border-b border-slate-700 hover:border-transparent font-serif">
-            resume
-          </a>
-        </div>
+        <Navigation />
         
         <div className="max-w-7xl w-full mx-auto px-8 py-12 flex flex-col md:flex-row items-center md:items-center md:justify-center pl-0 md:pl-16 lg:pl-54 z-10">
           {/* Text content - adjusted for better centering and moved right */}
