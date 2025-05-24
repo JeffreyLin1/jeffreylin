@@ -22,9 +22,9 @@ export default function Experiences() {
         {/* Navigation Links */}
         <Navigation />
         
-        <div className="max-w-6xl w-full mx-auto px-8 pt-24 pb-12 z-10">
+        <div className="max-w-6xl w-full mx-auto px-8 pt-20 pb-8 z-10">
           {/* Experiences Header */}
-          <h1 className={`text-5xl md:text-6xl font-bold mb-12 text-slate-800 tracking-tight opacity-0 font-serif ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
+          <h1 className={`text-4xl md:text-5xl font-bold mb-8 text-slate-800 tracking-tight opacity-0 font-serif ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
             Work Experience
           </h1>
           
@@ -33,7 +33,7 @@ export default function Experiences() {
             {/* Timeline Line */}
             <div className="absolute left-8 md:left-12 top-0 bottom-0 w-0.5 bg-slate-300"></div>
             
-            <div className="space-y-16">
+            <div className="space-y-12">
               {/* Shopify Experience */}
               <div className="relative">
                 <div className="flex gap-8">
@@ -49,25 +49,25 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-12">
-                    <div className="flex gap-8">
+                  <div className="flex-1 border-b border-slate-200 pb-8">
+                    <div className="flex gap-6">
                       <div className="w-1/3">
                         <Image
                           src="/shopify.png"
                           alt="Shopify Office"
-                          width={300}
-                          height={200}
+                          width={250}
+                          height={150}
                           className="rounded-lg shadow-md"
                         />
                       </div>
                       <div className="w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-3xl font-bold text-slate-800">Shopify</h2>
+                          <h2 className="text-2xl font-bold text-slate-800">Shopify</h2>
                         </div>
                         
-                        <p className="text-lg text-slate-600 italic mb-3">Incoming Engineering Intern</p>
+                        <p className="text-base text-slate-600 italic mb-2">Incoming Engineering Intern</p>
                         
-                        <div className="text-lg text-slate-700">
+                        <div className="text-base text-slate-700">
                           <p>Incoming engineering intern on the Shopify platform team, working on core e-commerce functionality and developer tools.</p>
                         </div>
                       </div>
@@ -91,26 +91,26 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-12">
-                    <div className="flex gap-8">
+                  <div className="flex-1 border-b border-slate-200 pb-8">
+                    <div className="flex gap-6">
                       <div className="w-1/3">
                         <Image
                           src="/agentnoon.jpeg"
                           alt="Autodesk Office"
-                          width={300}
-                          height={200}
+                          width={250}
+                          height={150}
                           className="rounded-lg shadow-md"
                         />
                       </div>
                       <div className="w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-3xl font-bold text-slate-800">Agentnoon (YC W22)</h2>
+                          <h2 className="text-2xl font-bold text-slate-800">Agentnoon (YC W22)</h2>
                         </div>
                         
-                        <p className="text-lg text-slate-600 italic mb-3">Product/software Engineering Intern</p>
+                        <p className="text-base text-slate-600 italic mb-2">Product/software Engineering Intern</p>
                         
-                        <div className="text-lg text-slate-700">
-                          <p className="mb-2">Engineered access control logic for <span className="font-medium">100+ business dashboards supporting 5,000+ users</span> and optimized tree traversal algorithms, improving search speed by <span className="font-medium">80%</span>.</p>
+                        <div className="text-base text-slate-700">
+                          <p className="mb-1">Engineered access control logic for <span className="font-medium">100+ business dashboards supporting 5,000+ users</span> and optimized tree traversal algorithms, improving search speed by <span className="font-medium">80%</span>.</p>
                           <p>Developed <span className="font-medium">10+ database migrations</span> and refactored legacy Vue components, boosting component reusability by <span className="font-medium">3x</span>.</p>
                         </div>
                       </div>
@@ -134,26 +134,26 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-12">
-                    <div className="flex gap-8">
+                  <div className="flex-1 border-b border-slate-200 pb-8">
+                    <div className="flex gap-6">
                       <div className="w-1/3">
                         <Image
                           src="/pokeguys.png"
                           alt="Nestlé Office"
-                          width={300}
-                          height={200}
+                          width={250}
+                          height={150}
                           className="rounded-lg shadow-md"
                         />
                       </div>
                       <div className="w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-3xl font-bold text-slate-800">Poke Guys</h2>
+                          <h2 className="text-2xl font-bold text-slate-800">Poke Guys</h2>
                         </div>
                         
-                        <p className="text-lg text-slate-600 italic mb-3">Crew Member</p>
+                        <p className="text-base text-slate-600 italic mb-2">Crew Member</p>
                         
-                        <div className="text-lg text-slate-700">
-                          <p className="mb-2">Provided excellent customer service while preparing fresh poke bowls and managing cash transactions in a fast-paced environment.</p>
+                        <div className="text-base text-slate-700">
+                          <p className="mb-1">Provided excellent customer service while preparing fresh poke bowls and managing cash transactions in a fast-paced environment.</p>
                           <p>Maintained food safety standards and collaborated with team members to ensure efficient operations during peak hours.</p>
                         </div>
                       </div>
@@ -183,20 +183,20 @@ export default function Experiences() {
                         <Image
                           src="/tamarackwelding.jpg"
                           alt="Yukon Wilderness Workshop"
-                          width={300}
-                          height={200}
+                          width={250}
+                          height={150}
                           className="rounded-lg shadow-md"
                         />
                       </div>
                       <div className="w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-3xl font-bold text-slate-800">Tamarack Welding</h2>
+                          <h2 className="text-2xl font-bold text-slate-800">Tamarack Welding</h2>
                         </div>
                         
-                        <p className="text-lg text-slate-600 italic mb-3">Project Manager</p>
+                        <p className="text-base text-slate-600 italic mb-2">Project Manager</p>
                         
-                        <div className="text-lg text-slate-700">
-                          <p className="mb-2">Managed a remote welding and equipment repair shop in the Yukon territory, coordinating logistics for supplies in challenging conditions.</p>
+                        <div className="text-base text-slate-700">
+                          <p className="mb-1">Managed a remote welding and equipment repair shop in the Yukon territory, coordinating logistics for supplies in challenging conditions.</p>
                           <p>Led a team of technicians to complete projects on schedule and developed innovative solutions with limited resources.</p>
                         </div>
                       </div>
@@ -220,26 +220,26 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-12">
-                    <div className="flex gap-8">
+                  <div className="flex-1 border-b border-slate-200 pb-8">
+                    <div className="flex gap-6">
                       <div className="w-1/3">
                         <Image
                           src="/digitalmoment.png"
                           alt="Coding Education"
-                          width={300}
-                          height={200}
+                          width={250}
+                          height={150}
                           className="rounded-lg shadow-md"
                         />
                       </div>
                       <div className="w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-3xl font-bold text-slate-800">Digital Moment</h2>
+                          <h2 className="text-2xl font-bold text-slate-800">Digital Moment</h2>
                         </div>
                         
-                        <p className="text-lg text-slate-600 italic mb-3">Programming Teacher</p>
+                        <p className="text-base text-slate-600 italic mb-2">Programming Teacher</p>
                         
-                        <div className="text-lg text-slate-700">
-                          <p className="mb-2">Taught programming fundamentals to students and spoke at <span className="font-medium">TikTok's office about AI</span> developments and their impact on education.</p>
+                        <div className="text-base text-slate-700">
+                          <p className="mb-1">Taught programming fundamentals to students and spoke at <span className="font-medium">TikTok's office about AI</span> developments and their impact on education.</p>
                           <p>Developed curriculum and mentored aspiring developers while building public speaking experience through tech presentations.</p>
                         </div>
                       </div>
@@ -263,25 +263,25 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 pb-8">
-                    <div className="flex gap-8">
+                  <div className="flex-1 pb-6">
+                    <div className="flex gap-6">
                       <div className="w-1/3">
                         <Image
                           src="/mirror.png"
                           alt="Newspaper Delivery"
-                          width={300}
-                          height={200}
+                          width={250}
+                          height={150}
                           className="rounded-lg shadow-md"
                         />
                       </div>
                       <div className="w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-3xl font-bold text-slate-800">The Mirror</h2>
+                          <h2 className="text-2xl font-bold text-slate-800">The Mirror</h2>
                         </div>
                         
-                        <p className="text-lg text-slate-600 italic mb-3">Paper Boy</p>
+                        <p className="text-base text-slate-600 italic mb-2">Paper Boy</p>
                         
-                        <div className="text-lg text-slate-700">
+                        <div className="text-base text-slate-700">
                           <p>Humble beginnings.</p>
                         </div>
                       </div>
