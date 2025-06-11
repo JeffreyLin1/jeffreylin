@@ -22,18 +22,14 @@ export default function Projects() {
         {/* Navigation Links */}
         <Navigation />
         
-        <div className="max-w-5xl w-full mx-auto px-8 pt-24 pb-12 z-10">
-          {/* Projects Header */}
-          <h1 className={`text-5xl md:text-6xl font-bold mb-12 text-slate-800 tracking-tight opacity-0 font-serif ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
-            Projects
-          </h1>
+        <div className="max-w-5xl w-full mx-auto px-8 pt-12 sm:pt-24 pb-12 z-10">
           
           {/* Project List */}
           <div className={`space-y-16 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-300' : ''}`}>
             {/* Brainrot.mov */}
             <div className="border-b border-slate-200 pb-12">
-              <div className="flex gap-8">
-                <div className="w-1/2">
+              <div className="flex flex-col sm:flex-row gap-8">
+                <div className="w-full sm:w-1/2">
                   <Image
                     src="/brainrot.png"
                     alt="Brainrot.mov Project"
@@ -42,9 +38,9 @@ export default function Projects() {
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2 flex flex-col">
                   <div className="flex justify-between items-center mb-2">
-                    <h2 className="text-3xl font-bold text-slate-800">Brainrot.mov - $1k MRR</h2>
+                    <h2 className="text-3xl font-bold text-slate-800">Brainrot.mov</h2>
                     <div className="flex space-x-3">
                       <a href="http://brainrot.mov" target="_blank" rel="noopener noreferrer" aria-label="External link" className="text-slate-700 hover:text-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -54,19 +50,25 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-slate-600 italic mb-3">Next.js, Supabase, ProxyCurl, React, PostgreSQL, Node.js</p>
+                  <div className="text-lg text-slate-700 flex-grow">
+                    <p className="mb-2">AI-powered short form content creation platform.<span className="font-medium"> 2M+ views generated, 200k+ followers, 1k+ users, $400 MRR ($4k ARR) </span></p>
+                    <p>Still in progress. MRR doubling by the month.</p>
+                  </div>
                   
-                  <div className="text-lg text-slate-700">
-                    <p className="mb-2">Co-founded a social platform and job board that achieved <span className="font-medium">700+ users in 3 days and 100k+ page visits</span> with a <span className="font-medium">16% bounce rate</span>, featuring an ELO rating system and LinkedIn integration via custom RESTful APIs.</p>
-                    <p>Drew inbound interest from 20+ companies including Shopify and YC-backed startups.</p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["SST", "Bun", "Cloudflare", "AWS Lambda", "PostgreSQL", "S3", "CloudFront", "SQS", "AWS SES", "Zero (RociCorp)", "Docker", "ffmpeg"].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
             {/* UWSummit Project */}
             <div className="border-b border-slate-200 pb-12">
-              <div className="flex gap-8">
-                <div className="w-1/2">
+              <div className="flex flex-col sm:flex-row gap-8">
+                <div className="w-full sm:w-1/2">
                   <Image
                     src="/uwsummit.png"
                     alt="UWSummit Project"
@@ -75,7 +77,7 @@ export default function Projects() {
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2 flex flex-col">
                   <div className="flex justify-between items-center mb-2">
                     <h2 className="text-3xl font-bold text-slate-800">UWSummit - Acquired by Clado (YC X25)</h2>
                     <div className="flex space-x-3">
@@ -92,11 +94,17 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-slate-600 italic mb-3">Next.js, Supabase, ProxyCurl, React, PostgreSQL, Node.js</p>
-                  
-                  <div className="text-lg text-slate-700">
-                    <p className="mb-2">Co-founded a social platform and job board that achieved <span className="font-medium">700+ users in 3 days and 100k+ page visits</span> with a <span className="font-medium">16% bounce rate</span>, featuring an ELO rating system and LinkedIn integration via custom RESTful APIs.</p>
+                  <div className="text-lg text-slate-700 flex-grow">
+                    <p className="mb-2">A social platform and job board, where users choose between two waterloo students based on how cracked their LinkedIn is. Achieved <span className="font-medium">700+ users in 3 days and 100k+ page visits</span></p>
                     <p>Drew inbound interest from 20+ companies including Shopify and YC-backed startups.</p>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["Next.js", "Supabase", "ProxyCurl", "React", "PostgreSQL", "Node.js"].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -104,8 +112,8 @@ export default function Projects() {
             
             {/* DIH Project */}
             <div className="border-b border-slate-200 pb-12">
-              <div className="flex gap-8">
-                <div className="w-1/2">
+              <div className="flex flex-col sm:flex-row gap-8">
+                <div className="w-full sm:w-1/2">
                   <Image
                     src="/dih.png"
                     alt="DIH Project"
@@ -114,9 +122,9 @@ export default function Projects() {
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2 flex flex-col">
                   <div className="flex justify-between items-center mb-2">
-                    <h2 className="text-3xl font-bold text-slate-800">DIH 🥀 - Meta-Framework for LLM Apps</h2>
+                    <h2 className="text-3xl font-bold text-slate-800">DIH 🥀</h2>
                     <div className="flex space-x-3">
                       <a href="https://www.npmjs.com/package/@tr1jeffrey/dih" target="_blank" rel="noopener noreferrer" aria-label="External link" className="text-slate-700 hover:text-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -131,11 +139,17 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-slate-600 italic mb-3">Node.js, TypeScript, Next.js, OpenAI, Anthropic, Vercel</p>
+                  <div className="text-lg text-slate-700 flex-grow">
+                    <p className="mb-2"><span className="font-medium">TypeScript meta-framework on Next.js</span> that simplifies building AI wrapper apps with modules for chat completions, tool calling, and streaming.</p>
+                    <p>Also created a <span className="font-medium">CLI scaffolding tool</span> and utilities for <span className="font-medium">token counting and cost management</span> to help developers manage LLM usage.</p>
+                  </div>
                   
-                  <div className="text-lg text-slate-700">
-                    <p className="mb-2">Built and published DIH, a <span className="font-medium">TypeScript meta-framework on Next.js</span> that simplifies building AI wrapper apps with modules for chat completions, tool calling, and streaming.</p>
-                    <p>Created a <span className="font-medium">CLI scaffolding tool</span> and utilities for <span className="font-medium">token counting and cost management</span> to help developers manage LLM usage.</p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["Node.js", "TypeScript", "Next.js", "OpenAI", "Anthropic", "Vercel"].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -143,8 +157,8 @@ export default function Projects() {
             
             {/* Agility Project */}
             <div className="border-b border-slate-200 pb-12">
-              <div className="flex gap-8">
-                <div className="w-1/2">
+              <div className="flex flex-col sm:flex-row gap-8">
+                <div className="w-full sm:w-1/2">
                   <Image
                     src="/agility.png"
                     alt="Agility Project"
@@ -153,9 +167,9 @@ export default function Projects() {
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2 flex flex-col">
                   <div className="flex justify-between items-center mb-2">
-                    <h2 className="text-3xl font-bold text-slate-800">Agility - LLM driven Workflow Automation Platform</h2>
+                    <h2 className="text-3xl font-bold text-slate-800">Agility</h2>
                     <div className="flex space-x-3">
                       <a href="http://agility-gamma.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="External link" className="text-slate-700 hover:text-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -170,11 +184,17 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-slate-600 italic mb-3">Typescript, Deno, 10+ external APIs (GitHub, Gmail, OpenAI, Discord, etc.), Next.js</p>
-                  
-                  <div className="text-lg text-slate-700">
-                    <p className="mb-2">Architected a full-stack workflow platform with <span className="font-medium">20+ modular agents</span> and <span className="font-medium">AI-driven workflow generation</span> from natural language.</p>
+                  <div className="text-lg text-slate-700 flex-grow">
+                    <p className="mb-2">End-to-end workflow platform with <span className="font-medium">20+ modular agents</span> and <span className="font-medium">AI-driven workflow generation</span> from natural language.</p>
                     <p>Built a dynamic visual canvas for <span className="font-medium">drag-and-drop automation</span> with a microservices backend handling <span className="font-medium">OAuth 2.0 and JWT validation</span>.</p>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["TypeScript", "Deno", "GitHub API", "Gmail API", "OpenAI", "Discord API", "Next.js"].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -182,8 +202,8 @@ export default function Projects() {
             
             {/* PackShots Project */}
             <div className="border-b border-slate-200 pb-12">
-              <div className="flex gap-8">
-                <div className="w-1/2">
+              <div className="flex flex-col sm:flex-row gap-8">
+                <div className="w-full sm:w-1/2">
                   <Image
                     src="/packshots.png"
                     alt="PackShots Project"
@@ -192,9 +212,9 @@ export default function Projects() {
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2 flex flex-col">
                   <div className="flex justify-between items-center mb-2">
-                    <h2 className="text-3xl font-bold text-slate-800">PackShots - Cross-platform AI-Powered Packing App</h2>
+                    <h2 className="text-3xl font-bold text-slate-800">PackShots</h2>
                     <div className="flex space-x-3">
                       <a href="https://github.com/JeffreyLin1/Packshots" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-slate-700 hover:text-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -204,11 +224,17 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-slate-600 italic mb-3">React native, Expo, Google Cloud Vision, OpenWeatherMap</p>
-                  
-                  <div className="text-lg text-slate-700">
-                    <p className="mb-2">Built a cross-platform React Native app used by <span className="font-medium">20+ travelers</span> that uses Google Vision and weather APIs to detect items and generate <span className="font-medium">location-based packing suggestions</span>.</p>
+                  <div className="text-lg text-slate-700 flex-grow">
+                    <p className="mb-2">Cross-platform React Native app used by <span className="font-medium">20+ travelers</span> that uses Google Vision and weather APIs to detect items and generate <span className="font-medium">location-based packing suggestions</span>.</p>
                     <p>Achieved <span className="font-medium">90%+ accuracy</span> with Levenshtein distance matching and implemented <span className="font-medium">speech recognition and offline storage</span>.</p>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["React Native", "Expo", "Google Cloud Vision", "OpenWeatherMap"].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -216,8 +242,8 @@ export default function Projects() {
             
             {/* CrankFlow Project */}
             <div className="pb-8">
-              <div className="flex gap-8">
-                <div className="w-1/2">
+              <div className="flex flex-col sm:flex-row gap-8">
+                <div className="w-full sm:w-1/2">
                   <Image
                     src="/crankflow.png"
                     alt="CrankFlow Project"
@@ -226,9 +252,9 @@ export default function Projects() {
                     className="rounded-lg shadow-md"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2 flex flex-col">
                   <div className="flex justify-between items-center mb-2">
-                    <h2 className="text-3xl font-bold text-slate-800">CrankFlow - B2B Demand Forecasting Platform</h2>
+                    <h2 className="text-3xl font-bold text-slate-800">CrankFlow</h2>
                     <div className="flex space-x-3">
                       <a href="https://github.com/JeffreyLin1/CrankFlow" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-slate-700 hover:text-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -238,11 +264,17 @@ export default function Projects() {
                     </div>
                   </div>
                   
-                  <p className="text-lg text-slate-600 italic mb-3">Python, Chart.js, Prophet, Pandas, Next.js, Typescript</p>
-                  
-                  <div className="text-lg text-slate-700">
-                    <p className="mb-2">Built a full-stack forecasting platform generating <span className="font-medium">90-day sales predictions with 95%+ accuracy</span> using Meta's Prophet model.</p>
+                  <div className="text-lg text-slate-700 flex-grow">
+                    <p className="mb-2">Full-stack forecasting platform generating <span className="font-medium">90-day sales predictions with 95%+ accuracy</span> using Meta's Prophet model.</p>
                     <p>Created interactive dashboards with <span className="font-medium">trend visualizations and KPI calculations</span>, processing uploads of up to <span className="font-medium">50,000+ rows</span> per request.</p>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["Python", "Chart.js", "Prophet", "Pandas", "Next.js", "TypeScript"].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>

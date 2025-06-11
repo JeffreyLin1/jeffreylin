@@ -22,26 +22,19 @@ export default function Experiences() {
         {/* Navigation Links */}
         <Navigation />
         
-        <div className="max-w-6xl w-full mx-auto px-8 pt-20 pb-8 z-10">
-          {/* Experiences Header */}
-          <h1 className={`text-4xl md:text-5xl font-bold mb-8 text-slate-800 tracking-tight opacity-0 font-serif ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
-            Work Experience
-          </h1>
+        <div className="max-w-6xl w-full mx-auto px-8 pt-12 sm:pt-20 pb-8 z-10">
           
           {/* Experience List with Timeline */}
           <div className={`relative opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-300' : ''}`}>
             {/* Timeline Line */}
-            <div className="absolute left-8 md:left-12 top-0 bottom-0 w-0.5 bg-slate-300"></div>
+            <div className="absolute left-32 md:left-40 top-0 bottom-0 w-0.5 bg-slate-300 hidden sm:block"></div>
             
             <div className="space-y-12">
               {/* Shopify Experience */}
               <div className="relative">
                 <div className="flex gap-8">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gray-500 border-4 border-white shadow-md"></div>
-                  
                   {/* Timeline Date */}
-                  <div className="w-24 md:w-32 flex items-center justify-end">
+                  <div className="w-24 md:w-32 hidden sm:flex items-center justify-end">
                     <div>
                       <p className="text-lg font-medium text-slate-700">May 2024</p>
                       <p className="text-sm text-slate-500">Present</p>
@@ -49,20 +42,23 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-8">
-                    <div className="flex gap-6">
-                      <div className="w-1/3">
+                  <div className="flex-1 border-b border-slate-200 pb-8 ml-8 md:ml-16">
+                    <div className="flex flex-col sm:flex-row gap-6">
+                      <div className="w-full sm:w-1/3 flex justify-center">
                         <Image
                           src="/shopify.png"
                           alt="Shopify Office"
-                          width={250}
-                          height={150}
+                          width={200}
+                          height={120}
                           className="rounded-lg shadow-md"
                         />
                       </div>
-                      <div className="w-2/3">
+                      <div className="w-full sm:w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-2xl font-bold text-slate-800">Shopify</h2>
+                          <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold text-slate-800">Shopify</h2>
+                            <span className="text-sm text-slate-500">May 2024 - Present</span>
+                          </div>
                         </div>
                         
                         <p className="text-base text-slate-600 italic mb-2">Incoming Engineering Intern</p>
@@ -79,11 +75,8 @@ export default function Experiences() {
               {/* Agentnoon (YC W22) Experience */}
               <div className="relative">
                 <div className="flex gap-8">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gray-500 border-4 border-white shadow-md"></div>
-                  
                   {/* Timeline Date */}
-                  <div className="w-24 md:w-32 flex items-center justify-end">
+                  <div className="w-24 md:w-32 hidden sm:flex items-center justify-end">
                     <div>
                       <p className="text-lg font-medium text-slate-700">Sept 2023</p>
                       <p className="text-sm text-slate-500">Dec 2023</p>
@@ -91,20 +84,23 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-8">
-                    <div className="flex gap-6">
-                      <div className="w-1/3">
+                  <div className="flex-1 border-b border-slate-200 pb-8 ml-8 md:ml-16">
+                    <div className="flex flex-col sm:flex-row gap-6">
+                      <div className="w-full sm:w-1/3 flex justify-center">
                         <Image
                           src="/agentnoon.jpeg"
                           alt="Autodesk Office"
-                          width={250}
-                          height={150}
+                          width={200}
+                          height={120}
                           className="rounded-lg shadow-md"
                         />
                       </div>
-                      <div className="w-2/3">
+                      <div className="w-full sm:w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-2xl font-bold text-slate-800">Agentnoon (YC W22)</h2>
+                          <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold text-slate-800">Agentnoon (YC W22)</h2>
+                            <span className="text-sm text-slate-500">Sept 2023 - Dec 2023</span>
+                          </div>
                         </div>
                         
                         <p className="text-base text-slate-600 italic mb-2">Product/software Engineering Intern</p>
@@ -122,11 +118,8 @@ export default function Experiences() {
               {/* Nestle Experience */}
               <div className="relative">
                 <div className="flex gap-8">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gray-500 border-4 border-white shadow-md"></div>
-                  
                   {/* Timeline Date */}
-                  <div className="w-24 md:w-32 flex items-center justify-end">
+                  <div className="w-24 md:w-32 hidden sm:flex items-center justify-end">
                     <div>
                       <p className="text-lg font-medium text-slate-700">Jan 2023</p>
                       <p className="text-sm text-slate-500">Apr 2023</p>
@@ -134,20 +127,23 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-8">
-                    <div className="flex gap-6">
-                      <div className="w-1/3">
+                  <div className="flex-1 border-b border-slate-200 pb-8 ml-8 md:ml-16">
+                    <div className="flex flex-col sm:flex-row gap-6">
+                      <div className="w-full sm:w-1/3 flex justify-center">
                         <Image
                           src="/pokeguys.png"
                           alt="Nestlé Office"
-                          width={250}
-                          height={150}
+                          width={200}
+                          height={120}
                           className="rounded-lg shadow-md"
                         />
                       </div>
-                      <div className="w-2/3">
+                      <div className="w-full sm:w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-2xl font-bold text-slate-800">Poke Guys</h2>
+                          <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold text-slate-800">Poke Guys</h2>
+                            <span className="text-sm text-slate-500">Jan 2023 - Apr 2023</span>
+                          </div>
                         </div>
                         
                         <p className="text-base text-slate-600 italic mb-2">Crew Member</p>
@@ -165,11 +161,8 @@ export default function Experiences() {
               {/* Yukon Wilderness Experience */}
               <div className="relative">
                 <div className="flex gap-8">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gray-500 border-4 border-white shadow-md"></div>
-                  
                   {/* Timeline Date */}
-                  <div className="w-24 md:w-32 flex items-center justify-end">
+                  <div className="w-24 md:w-32 hidden sm:flex items-center justify-end">
                     <div>
                       <p className="text-lg font-medium text-slate-700">Summer</p>
                       <p className="text-sm text-slate-500">2021</p>
@@ -177,20 +170,23 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 pb-8">
-                    <div className="flex gap-8">
-                      <div className="w-1/3">
+                  <div className="flex-1 pb-8 ml-8 md:ml-16">
+                    <div className="flex flex-col sm:flex-row gap-8">
+                      <div className="w-full sm:w-1/3 flex justify-center">
                         <Image
                           src="/tamarackwelding.jpg"
                           alt="Yukon Wilderness Workshop"
-                          width={250}
-                          height={150}
+                          width={200}
+                          height={120}
                           className="rounded-lg shadow-md"
                         />
                       </div>
-                      <div className="w-2/3">
+                      <div className="w-full sm:w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-2xl font-bold text-slate-800">Tamarack Welding</h2>
+                          <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold text-slate-800">Tamarack Welding</h2>
+                            <span className="text-sm text-slate-500">Summer 2021</span>
+                          </div>
                         </div>
                         
                         <p className="text-base text-slate-600 italic mb-2">Project Manager</p>
@@ -208,11 +204,8 @@ export default function Experiences() {
               {/* Coding Teacher Experience */}
               <div className="relative">
                 <div className="flex gap-8">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gray-500 border-4 border-white shadow-md"></div>
-                  
                   {/* Timeline Date */}
-                  <div className="w-24 md:w-32 flex items-center justify-end">
+                  <div className="w-24 md:w-32 hidden sm:flex items-center justify-end">
                     <div>
                       <p className="text-lg font-medium text-slate-700">2020</p>
                       <p className="text-sm text-slate-500">2021</p>
@@ -220,20 +213,23 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 border-b border-slate-200 pb-8">
-                    <div className="flex gap-6">
-                      <div className="w-1/3">
+                  <div className="flex-1 border-b border-slate-200 pb-8 ml-8 md:ml-16">
+                    <div className="flex flex-col sm:flex-row gap-6">
+                      <div className="w-full sm:w-1/3 flex justify-center">
                         <Image
                           src="/digitalmoment.png"
                           alt="Coding Education"
-                          width={250}
-                          height={150}
+                          width={200}
+                          height={120}
                           className="rounded-lg shadow-md"
                         />
                       </div>
-                      <div className="w-2/3">
+                      <div className="w-full sm:w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-2xl font-bold text-slate-800">Digital Moment</h2>
+                          <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold text-slate-800">Digital Moment</h2>
+                            <span className="text-sm text-slate-500">2020 - 2021</span>
+                          </div>
                         </div>
                         
                         <p className="text-base text-slate-600 italic mb-2">Programming Teacher</p>
@@ -251,11 +247,8 @@ export default function Experiences() {
               {/* Newspaper Carrier Experience */}
               <div className="relative">
                 <div className="flex gap-8">
-                  {/* Timeline Dot */}
-                  <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gray-500 border-4 border-white shadow-md"></div>
-                  
                   {/* Timeline Date */}
-                  <div className="w-24 md:w-32 flex items-center justify-end">
+                  <div className="w-24 md:w-32 hidden sm:flex items-center justify-end">
                     <div>
                       <p className="text-lg font-medium text-slate-700">2019</p>
                       <p className="text-sm text-slate-500">2020</p>
@@ -263,20 +256,23 @@ export default function Experiences() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 pb-6">
-                    <div className="flex gap-6">
-                      <div className="w-1/3">
+                  <div className="flex-1 pb-6 ml-8 md:ml-16">
+                    <div className="flex flex-col sm:flex-row gap-6">
+                      <div className="w-full sm:w-1/3 flex justify-center">
                         <Image
                           src="/mirror.png"
                           alt="Newspaper Delivery"
-                          width={250}
-                          height={150}
+                          width={200}
+                          height={120}
                           className="rounded-lg shadow-md"
                         />
                       </div>
-                      <div className="w-2/3">
+                      <div className="w-full sm:w-2/3">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
-                          <h2 className="text-2xl font-bold text-slate-800">The Mirror</h2>
+                          <div className="flex items-center gap-3">
+                            <h2 className="text-2xl font-bold text-slate-800">The Mirror</h2>
+                            <span className="text-sm text-slate-500">2019 - 2020</span>
+                          </div>
                         </div>
                         
                         <p className="text-base text-slate-600 italic mb-2">Paper Boy</p>

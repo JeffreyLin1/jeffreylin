@@ -20,11 +20,7 @@ export default function Resume() {
         {/* Navigation Links */}
         <Navigation />
         
-        <div className={`max-w-6xl w-full mx-auto px-8 pt-24 pb-12 z-10 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
-          {/* Resume Header */}
-          <h1 className="text-5xl md:text-6xl font-bold mb-12 text-slate-800 tracking-tight font-serif">
-            Resume
-          </h1>
+        <div className={`max-w-6xl w-full mx-auto px-8 pt-12 sm:pt-24 pb-12 z-10 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-200' : ''}`}>
           
           {/* PDF Viewer */}
           <div className="w-full h-[calc(100vh-12rem)]">
