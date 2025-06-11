@@ -30,7 +30,39 @@ export default function Projects() {
           
           {/* Project List */}
           <div className={`space-y-16 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-300' : ''}`}>
-            
+            {/* Brainrot.mov */}
+            <div className="border-b border-slate-200 pb-12">
+              <div className="flex gap-8">
+                <div className="w-1/2">
+                  <Image
+                    src="/brainrot.png"
+                    alt="Brainrot.mov Project"
+                    width={600}
+                    height={500}
+                    className="rounded-lg shadow-md"
+                  />
+                </div>
+                <div className="w-1/2">
+                  <div className="flex justify-between items-center mb-2">
+                    <h2 className="text-3xl font-bold text-slate-800">Brainrot.mov - $1k MRR</h2>
+                    <div className="flex space-x-3">
+                      <a href="http://brainrot.mov" target="_blank" rel="noopener noreferrer" aria-label="External link" className="text-slate-700 hover:text-slate-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16H5V8h7V6H5a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h7v-2z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <p className="text-lg text-slate-600 italic mb-3">Next.js, Supabase, ProxyCurl, React, PostgreSQL, Node.js</p>
+                  
+                  <div className="text-lg text-slate-700">
+                    <p className="mb-2">Co-founded a social platform and job board that achieved <span className="font-medium">700+ users in 3 days and 100k+ page visits</span> with a <span className="font-medium">16% bounce rate</span>, featuring an ELO rating system and LinkedIn integration via custom RESTful APIs.</p>
+                    <p>Drew inbound interest from 20+ companies including Shopify and YC-backed startups.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* UWSummit Project */}
             <div className="border-b border-slate-200 pb-12">
               <div className="flex gap-8">
@@ -45,14 +77,14 @@ export default function Projects() {
                 </div>
                 <div className="w-1/2">
                   <div className="flex justify-between items-center mb-2">
-                    <h2 className="text-3xl font-bold text-slate-800">UWSummit (Acquired by Linkd (YC X25)) - Social platform and Job board</h2>
+                    <h2 className="text-3xl font-bold text-slate-800">UWSummit - Acquired by Clado (YC X25)</h2>
                     <div className="flex space-x-3">
-                      <a href="https://github.com/TheJerseyClub/UWSummit" target="_blank" rel="noopener noreferrer" aria-label="External link" className="text-slate-700 hover:text-slate-900">
+                      <a href="http://uwsummit.ca" target="_blank" rel="noopener noreferrer" aria-label="External link" className="text-slate-700 hover:text-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16H5V8h7V6H5a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h7v-2z"></path>
                         </svg>
                       </a>
-                      <a href="http://uwsummit.ca" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-slate-700 hover:text-slate-900">
+                      <a href="https://github.com/TheJerseyClub/UWSummit" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-slate-700 hover:text-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
                         </svg>
