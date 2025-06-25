@@ -20,11 +20,6 @@ export default function Home() {
     "Biked 3k+ km across the US in 1 month, camping every night 🚴‍♂️",
   ];
   
-  // Auto-rotate achievements - no longer needed
-  useEffect(() => {
-    // No longer rotating achievements
-  }, []);
-  
   // Trigger animations after component mounts
   useEffect(() => {
     setIsLoaded(true);
@@ -61,10 +56,10 @@ export default function Home() {
             
             {/* Summary about education and internship */}
             <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left opacity-0 font-serif ${isLoaded ? 'animate-slide-up opacity-100 delay-300' : ''}`}>
-              Systems Design Engineering @ UWaterloo
+              Systems Design Engineering @ UWaterloo '29
             </p>
             <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-slate-700 text-center md:text-left opacity-0 font-serif ${isLoaded ? 'animate-slide-up opacity-100 delay-300' : ''}`}>
-              Incoming eng intern @ Shopify
+              Incoming SWE intern @ Shopify
             </p>
             {/* Introduction text */}
             <p className={`text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-4 text-slate-700 font-medium text-left md:text-left opacity-0 font-serif ${isLoaded ? 'animate-slide-up opacity-100 delay-400' : ''}`}>

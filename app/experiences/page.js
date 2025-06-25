@@ -52,7 +52,7 @@ export default function Experiences() {
                       <p className="text-base text-slate-600 italic mb-2">Incoming Engineering Intern</p>
                       
                       <div className="text-base text-slate-700">
-                        <p>Incoming engineering intern on the Shopify platform team, working on core e-commerce functionality and developer tools.</p>
+                        <p>Incoming Fall 2025 intern.</p>
                       </div>
                     </div>
                   </div>
@@ -83,8 +83,8 @@ export default function Experiences() {
                       <p className="text-base text-slate-600 italic mb-2">Product/software Engineering Intern</p>
                       
                       <div className="text-base text-slate-700">
-                        <p className="mb-1">Engineered access control logic for <span className="font-medium">100+ business dashboards supporting 5,000+ users</span> and optimized tree traversal algorithms, improving search speed by <span className="font-medium">80%</span>.</p>
-                        <p>Developed <span className="font-medium">10+ database migrations</span> and refactored legacy Vue components, boosting component reusability by <span className="font-medium">3x</span>.</p>
+                        <p className="mb-1">YC startup doing B2B workforce planning. I engineered access control logic and optimized tree traversal algorithms for hierarchical data</p>
+                        <p>Developed database migrations and refactored legacy Vue components</p>
                       </div>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ export default function Experiences() {
                       
                       <div className="text-base text-slate-700">
                         <p className="mb-1">Taught programming fundamentals to students and spoke at <span className="font-medium">TikTok's office about AI</span> developments and their impact on education.</p>
-                        <p>Developed curriculum and mentored aspiring developers while building public speaking experience through tech presentations.</p>
+                        <p>Made project plans for students</p>
                       </div>
                     </div>
                   </div>
@@ -147,8 +147,8 @@ export default function Experiences() {
                       <p className="text-base text-slate-600 italic mb-2">Crew Member</p>
                       
                       <div className="text-base text-slate-700">
-                        <p className="mb-1">Provided excellent customer service while preparing fresh poke bowls and managing cash transactions in a fast-paced environment.</p>
-                        <p>Maintained food safety standards and collaborated with team members to ensure efficient operations during peak hours.</p>
+                        <p className="mb-1">I filleted a lot of fish, cut a lot of veggies, and made a lot of bowls</p>
+                        <p>Learned how to talk to people and walk them through a process of making a bowl</p>
                       </div>
                     </div>
                   </div>
@@ -179,8 +179,8 @@ export default function Experiences() {
                       <p className="text-base text-slate-600 italic mb-2">Project Manager</p>
                       
                       <div className="text-base text-slate-700">
-                        <p className="mb-1">Managed a remote welding and equipment repair shop in the Yukon territory, coordinating logistics for supplies in challenging conditions.</p>
-                        <p>Led a team of technicians to complete projects on schedule and developed innovative solutions with limited resources.</p>
+                        <p className="mb-1">Worked logistics in a warehouse in the middle of nowhere in the Yukon. I was surrounded by mountains and bears</p>
+                        <p>Welded frames together and painted some trailers too</p>
                       </div>
                     </div>
                   </div>

@@ -51,8 +51,8 @@ export default function Projects() {
                   </div>
                   
                   <div className="text-lg text-slate-700 flex-grow">
-                    <p className="mb-2">AI-powered short form content creation platform.<span className="font-medium"> 2M+ views generated, 200k+ followers, 1k+ users, $400 MRR ($4k ARR) </span></p>
-                    <p>Still in progress. MRR doubling by the month.</p>
+                    <p className="mb-2">AI-powered short form content creation platform.<span className="font-medium"> 2M+ views & 200k+ followers generated, 1k+ users, $500 MRR </span></p>
+                    <p>Still in progress. 112% MRR growth rate.</p>
                   </div>
                   
                   <div className="flex flex-wrap gap-2 mt-4">
