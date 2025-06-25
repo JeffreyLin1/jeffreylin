@@ -13,8 +13,8 @@ export default function Home() {
   
   // Array of achievements
   const achievements = [
-    "Scaled 3k+ users and $4k ARR across two projects 🚀",
-    "Built tools used by Nestle, FIFA, Autodesk, and more 😉",
+    "Sold a project, then made another one currently at $500 MRR 🚀",
+    "Engineer @ YC startup serving customers like FIFA and Autodesk 😉",
     "Managed a welding shop in the Yukon 🥶",
     "Voted best hair in high school 💇‍♂️",
     "Biked 3k+ km across the US in 1 month, camping every night 🚴‍♂️",
