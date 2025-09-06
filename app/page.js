@@ -47,7 +47,8 @@ export default function Home() {
         {/* Navigation Links */}
         <Navigation />
         
-        <div className="max-w-7xl w-full mx-auto px-3 sm:px-8 py-6 sm:py-12 pt-4 sm:pt-44 flex flex-col md:flex-row items-center md:items-center md:justify-center pl-0 md:pl-16 lg:pl-54 z-10">
+        <div className="transform origin-top scale-[0.95] md:scale-[0.9]">
+          <div className="max-w-7xl w-full mx-auto px-3 sm:px-8 py-6 sm:py-12 pt-4 sm:pt-44 flex flex-col md:flex-row items-center md:items-center md:justify-center pl-0 md:pl-16 lg:pl-54 z-10">
           {/* Text content - adjusted for better centering and moved right */}
           <div className="md:w-3/5 flex flex-col items-center md:items-start md:justify-center md:pr-8">
             {/* More approachable greeting - FURTHER INCREASED SIZE */}
@@ -114,22 +115,23 @@ export default function Home() {
           </div>
           
           <div className="md:w-2/5 flex justify-center md:justify-start items-center md:items-start md:-mt-32 md:ml-4 hidden sm:flex">
-            <div className={`relative w-auto h-auto md:max-w-lg lg:max-w-xl overflow-visible mb-3 sm:mb-8 md:mb-0`}>
+            <div className={`relative w-auto h-auto md:max-w-xl lg:max-w-2xl overflow-visible mb-3 sm:mb-8 md:mb-0`}>
               <div className="absolute -inset-4 bg-gradient-to-br from-slate-100 via-slate-200 to-blue-100 blur-xl opacity-80 z-0"></div>
               <div className="relative z-10 transform md:-translate-y-16">
                 <div className="relative">
                   <Image 
-                    src="/jeffrey6.png" 
+                    src="/jeffrey7.png" 
                     alt="Jeffrey Lin" 
                     width={800} 
                     height={1000}
-                    className="w-auto h-auto max-h-96 md:max-h-[34rem] object-contain drop-shadow-md transform scale-105"
+                    className="w-auto h-auto max-h-[28rem] md:max-h-[42rem] object-contain drop-shadow-md transform scale-105"
                     style={{ filter: 'saturate(1.25)' }}
                     priority
                   />
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
