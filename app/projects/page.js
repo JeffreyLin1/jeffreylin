@@ -1,18 +1,10 @@
 "use client"
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import Link from "next/link";
 import Navigation from "../components/Navigation";
 
 export default function Projects() {
-  // State to control animations
-  const [isLoaded, setIsLoaded] = useState(false);
   
-  // Trigger animations after component mounts
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   return (
     <div className="w-full bg-white font-serif">
@@ -25,7 +17,7 @@ export default function Projects() {
         <div className="max-w-5xl w-full mx-auto px-8 pt-12 sm:pt-24 pb-12 z-10">
           
           {/* Project List */}
-          <div className={`space-y-16 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-300' : ''}`}>
+          <div className={`space-y-16`}>
             {/* Brainrot.mov */}
             <div className="border-b border-slate-200 pb-12">
               <div className="flex flex-col sm:flex-row gap-8">
@@ -51,8 +43,8 @@ export default function Projects() {
                   </div>
                   
                   <div className="text-lg text-slate-700 flex-grow">
-                    <p className="mb-2">AI-powered short form content creation platform.<span className="font-medium"> 2M+ views & 200k+ followers generated, 1k+ users, $500 MRR </span></p>
-                    <p>Still in progress. 112% MRR growth rate.</p>
+                    <p className="mb-2">AI-powered short form content creation platform.</p>
+                    <p><span className="font-medium"> 2M+ views & 200k+ followers generated, 1k+ users, $1k+ MRR </span></p>
                   </div>
                   
                   <div className="flex flex-wrap gap-2 mt-4">
@@ -281,14 +273,14 @@ export default function Projects() {
             </div>
             
             {/* Call to Action */}
-            <div className={`text-center mt-16 opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-700' : ''}`}>
+            <div className={`text-center mt-16`}>
               <p className="text-2xl md:text-3xl text-slate-700 font-serif">
                 check out the rest of my projects{' '}
                 <a 
                   href="https://github.com/jeffreylin1" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-slate-800 font-medium border-b-2 border-slate-800 hover:border-transparent transition-colors duration-300"
+                  className="text-slate-800 font-medium border-b-2 border-slate-800 hover:border-transparent"
                 >
                   here
                 </a>

@@ -1,18 +1,11 @@
 "use client"
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
 
 export default function Experiences() {
-  // State to control animations
-  const [isLoaded, setIsLoaded] = useState(false);
   
-  // Trigger animations after component mounts
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
   return (
     <div className="w-full bg-white font-serif">
@@ -25,7 +18,7 @@ export default function Experiences() {
         <div className="max-w-6xl w-full mx-auto px-8 pt-12 sm:pt-20 pb-8 z-10">
           
           {/* Experience List */}
-          <div className={`relative opacity-0 ${isLoaded ? 'animate-slide-up opacity-100 delay-300' : ''}`}>
+          <div className={`relative`}>
             
             <div className="space-y-12">
               {/* Shopify Experience */}
@@ -49,10 +42,11 @@ export default function Experiences() {
                         </div>
                       </div>
                       
-                      <p className="text-base text-slate-600 italic mb-2">Incoming Engineering Intern</p>
+                      <p className="text-base text-slate-600 italic mb-2">Software Engineering Intern</p>
                       
                       <div className="text-base text-slate-700">
-                        <p>Incoming Fall 2025 intern.</p>
+                        <p>Working on assistants team, contributing to Sidekick AI</p>
+                        <p>Building "Reasoning Arena", a tool to benchmark and research conversational reasoning between LLMs</p>
                       </div>
                     </div>
                   </div>
@@ -80,7 +74,7 @@ export default function Experiences() {
                         </div>
                       </div>
                       
-                      <p className="text-base text-slate-600 italic mb-2">Product/software Engineering Intern</p>
+                      <p className="text-base text-slate-600 italic mb-2">Product & Software Engineering Intern</p>
                       
                       <div className="text-base text-slate-700">
                         <p className="mb-1">YC startup doing B2B workforce planning. I engineered access control logic and optimized tree traversal algorithms for hierarchical data</p>
