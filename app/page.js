@@ -9,9 +9,10 @@ export default function Home() {
     "Scaled an AI content creation tool to $1k+ MRR ",
     "Sold a project to a YC startup (1k+ users) ",
     "Prev product & SWE @ YC startup",
-    "Managed a welding shop in the Yukon ",
+    "Managed a welding shop in the Yukon",
+    "Marketing @ Cluely, WisprFlow, ViggleAI, etc.",
     "Content creator (5M+ views in < 1 month) ",
-    "Biked 3k+ km across the US in 1 month, camping every night ",
+    "Biked 3k+ km across the US in 1 month, camping every night",
   ];
   
   const renderAchievement = (text) => {
