@@ -6,9 +6,9 @@ import Navigation from "./components/Navigation";
 export default function Home() {
   // Array of achievements
   const achievements = [
-    "Scaled a content creation tool to $1k+ MRR ",
+    "Scaled an AI content creation tool to $1k+ MRR ",
     "Sold a project to a YC startup (1k+ users) ",
-    "Prev product & SWE @ YC startup serving customers like FIFA and Autodesk ",
+    "Prev product & SWE @ YC startup",
     "Managed a welding shop in the Yukon ",
     "Content creator (5M+ views in < 1 month) ",
     "Biked 3k+ km across the US in 1 month, camping every night ",
@@ -74,7 +74,7 @@ export default function Home() {
               Systems Design Engineering @ UWaterloo '29
             </p>
             <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-slate-700 text-center md:text-left font-serif`}>
-              Incoming SWE intern @ Shopify
+              SWE intern @ Shopify
             </p>
             {/* Introduction text */}
             <p className={`text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-4 text-slate-700 font-medium text-left md:text-left font-serif`}>
