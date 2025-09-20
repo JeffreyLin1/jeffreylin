@@ -19,7 +19,7 @@ export default function Resume() {
       <div className="w-full max-w-6xl mx-auto px-6 py-8">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <iframe
-            src="/SWE-Jeffrey-Lin-resumeV2.pdf"
+            src="/SWE-Jeffrey-Lin-ResumeV2.pdf"
             width="100%"
             height="800px"
             className="border-0"
@@ -28,7 +28,7 @@ export default function Resume() {
             <p className="text-center text-slate-600 p-8 font-serif">
               Your browser does not support PDF viewing. 
               <a 
-                href="/resume.pdf" 
+                href="/SWE-Jeffrey-Lin-ResumeV2.pdf" 
                 className="text-slate-800 border-b border-slate-400 hover:border-transparent ml-1"
                 download
               >
@@ -41,7 +41,7 @@ export default function Resume() {
         {/* Download link */}
         <div className="text-center mt-6">
           <a 
-            href="/resume.pdf" 
+            href="/SWE-Jeffrey-Lin-ResumeV2.pdf" 
             download
             className="inline-block bg-slate-800 text-white px-6 py-3 rounded-lg hover:bg-slate-700 transition-colors font-serif text-lg"
           >
