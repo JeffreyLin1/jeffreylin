@@ -1,43 +1,10 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import Navigation from "./components/Navigation";
 
 export default function Home() {
-  // Array of achievements
-  const achievements = [
-    "Scaled an AI content creation tool to $1k+ MRR ",
-    "Sold a project to a YC startup (1k+ users) ",
-    "Prev product & SWE @ YC startup",
-    "Managed a welding shop in the Yukon",
-    "Marketing @ Cluely, WisprFlow, ViggleAI, etc.",
-    "Content creator (5M+ views in < 1 month) ",
-    "Biked 3k+ km across the US in 1 month, camping every night",
-  ];
-  
-  const renderAchievement = (text) => {
-    if (text.includes('content creation tool')) {
-      const parts = text.split('content creation tool');
-      return (
-        <>
-          {parts[0]}
-          <a href="http://brainrot.mov" target="_blank" rel="noopener noreferrer" className="text-slate-800 border-b border-slate-400 hover:border-transparent">content creation tool</a>
-          {parts.slice(1).join('content creation tool')}
-        </>
-      );
-    }
-    if (text.startsWith('Sold a project to')) {
-      const parts = text.split('project');
-      return (
-        <>
-          {parts[0]}
-          <a href="http://uwsummit.ca" target="_blank" rel="noopener noreferrer" className="text-slate-800 border-b border-slate-400 hover:border-transparent">project</a>
-          {parts.slice(1).join('project')}
-        </>
-      );
-    }
-    return text;
-  }
 
 
   return (
@@ -48,10 +15,31 @@ export default function Home() {
         {/* Navigation Links */}
         <Navigation />
         
-        <div className="transform origin-top scale-[0.95] md:scale-[0.9]">
-          <div className="max-w-7xl w-full mx-auto px-3 sm:px-8 py-6 sm:py-12 pt-4 sm:pt-44 flex flex-col md:flex-row items-center md:items-center md:justify-center pl-0 md:pl-16 lg:pl-54 z-10">
-          {/* Text content - adjusted for better centering and moved right */}
-          <div className="md:w-3/5 flex flex-col items-center md:items-start md:justify-center md:pr-8">
+        <div className="w-full flex justify-center">
+          <div className="max-w-7xl lg:max-w-[95rem] xl:max-w-[110rem] px-4 sm:px-8 lg:px-16 py-6 sm:py-12 pt-4 sm:pt-20 flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-16 z-10">
+          
+          {/* Profile Image - shown on top for mobile, on left for desktop */}
+          <div className="flex-shrink-0 flex justify-center items-center">
+            <div className={`relative w-auto h-auto overflow-visible`}>
+              <div className="absolute -inset-2 bg-gradient-to-br from-slate-100 via-slate-200 to-blue-100 rounded-full blur-xl opacity-80 z-0"></div>
+              <div className="relative z-10">
+                <div className="relative w-[12rem] h-[12rem] md:w-[18rem] md:h-[18rem] rounded-full overflow-hidden">
+                  <Image 
+                    src="/jeffrey7.png" 
+                    alt="Jeffrey Lin" 
+                    width={800} 
+                    height={1000}
+                    className="w-full h-full object-cover drop-shadow-md"
+                    style={{ filter: 'saturate(1.25)' }}
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Text content - adjusted for better centering */}
+          <div className="flex-1 flex flex-col items-center md:items-start md:justify-center max-w-4xl">
             {/* More approachable greeting - FURTHER INCREASED SIZE */}
             <h1 className={`text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold mb-2 sm:mb-4 text-slate-800 tracking-tight text-center md:text-left font-serif`}>
               <span className="relative">
@@ -71,30 +59,31 @@ export default function Home() {
             </h1>
             
             {/* Summary about education and internship */}
-            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
-              Systems Design Engineering @ UWaterloo '29
+            <p className={`text-md sm:text-lg md:text-xl text-slate-600 text-center md:text-left font-serif`}>
+              SYDE @ UWaterloo
             </p>
-            <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-slate-700 text-center md:text-left font-serif`}>
+            <p className={`text-md sm:text-lg md:text-xl mb-3 sm:mb-6 text-slate-600 text-center md:text-left font-serif`}>
               SWE intern @ Shopify
             </p>
-            {/* Introduction text */}
-            <p className={`text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-4 text-slate-700 font-medium text-left md:text-left font-serif`}>
-              previously:
+            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
+              TL;DR:
             </p>
-            
-            {/* Static achievements list with bullet points */}
-            <div className={`w-full max-w-3xl mb-6 sm:mb-16 ml-4 sm:ml-0`}>
-              <ul className="space-y-1 sm:space-y-4">
-                {achievements.map((achievement, index) => (
-                  <li key={index} className="text-xl sm:text-xl md:text-2xl font-medium text-slate-700 flex items-start font-serif">
-                    <div className="flex-shrink-0 mr-2 sm:mr-4 mt-2 sm:mt-2">
-                      <div className="w-2 h-2 sm:w-4 sm:h-4 border-l-2 border-b-2 border-gray-500"></div>
-                    </div>
-                    <span className="max-w-xs sm:max-w-none">{renderAchievement(achievement)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
+              - Scaled a project to $1k MRR
+            </p>
+            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
+              - Sold a diff project to a YC startup
+            </p>
+            <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-slate-700 text-center md:text-left font-serif`}>
+              - SWE @ a startup that got acquired
+            </p>
+            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
+              Sounds interesting? See my <Link href="/projects" className="relative pb-0.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-slate-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-0">projects</Link> or <Link href="/experiences" className="relative pb-0.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-slate-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-0">experiences</Link>
+            </p>
+            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
+              
+            </p>
+
             {/* Social icons */}
             <div className="mt-4 flex items-center gap-5 text-slate-700">
               <a href="http://github.com/JeffreyLin1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-slate-900">
@@ -115,24 +104,6 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="md:w-2/5 flex justify-center md:justify-start items-center md:items-start md:-mt-32 md:ml-4 hidden sm:flex">
-            <div className={`relative w-auto h-auto md:max-w-xl lg:max-w-2xl overflow-visible mb-3 sm:mb-8 md:mb-0`}>
-              <div className="absolute -inset-4 bg-gradient-to-br from-slate-100 via-slate-200 to-blue-100 blur-xl opacity-80 z-0"></div>
-              <div className="relative z-10 transform md:-translate-y-16">
-                <div className="relative">
-                  <Image 
-                    src="/jeffrey7.png" 
-                    alt="Jeffrey Lin" 
-                    width={800} 
-                    height={1000}
-                    className="w-auto h-auto max-h-[28rem] md:max-h-[42rem] object-contain drop-shadow-md transform scale-105"
-                    style={{ filter: 'saturate(1.25)' }}
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
       </section>
