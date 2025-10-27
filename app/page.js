@@ -65,18 +65,22 @@ export default function Home() {
             <p className={`text-md sm:text-lg md:text-xl mb-3 sm:mb-6 text-slate-600 text-center md:text-left font-serif`}>
               SWE intern @ Shopify
             </p>
-            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
-              TL;DR:
-            </p>
-            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
-              - Scaled a project to $1k MRR
-            </p>
-            <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
-              - Sold a diff project to a YC startup
-            </p>
-            <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-slate-700 text-center md:text-left font-serif`}>
-              - SWE @ a startup that got acquired
-            </p>
+            <div className="w-full md:w-auto flex flex-col items-center md:items-start">
+              <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif w-full md:w-auto`}>
+                TL;DR:
+              </p>
+              <div className="w-full max-w-xs md:max-w-none md:w-auto flex flex-col px-4 md:px-0">
+                <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-left font-serif`}>
+                  - Scaled a project to $1k MRR
+                </p>
+                <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-left font-serif`}>
+                  - Sold a diff project to a YC startup
+                </p>
+                <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-slate-700 text-left font-serif`}>
+                  - SWE @ a startup that got acquired
+                </p>
+              </div>
+            </div>
             <p className={`text-lg sm:text-xl md:text-2xl text-slate-700 text-center md:text-left font-serif`}>
               Sounds interesting? See my <Link href="/projects" className="relative pb-0.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-slate-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-0">projects</Link> or <Link href="/experiences" className="relative pb-0.5 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-slate-700 after:transition-all after:duration-300 after:ease-in-out hover:after:w-0">experiences</Link>
             </p>
