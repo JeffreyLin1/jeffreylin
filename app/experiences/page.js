@@ -111,12 +111,12 @@ export default function Experiences() {
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
-                          <h2 className="text-lg sm:text-2xl font-bold text-slate-800">Cluely, WisprFlow, ViggleAI</h2>
+                          <h2 className="text-lg sm:text-2xl font-bold text-slate-800">Cluely & ViggleAI</h2>
                           <span className="text-sm text-slate-500 hidden sm:inline">Sep 2025 - Nov 2025</span>
                         </div>
                       </div>
                       
-                      <p className="text-base text-slate-600 italic mb-1 sm:mb-2">Contract Marketing</p>
+                      <p className="text-base text-slate-600 italic mb-1 sm:mb-2">Contract UGC Marketing</p>
                       <span className="text-xs text-slate-500 sm:hidden">Sep 2025 - Nov 2025</span>
                       
                       <div className="text-base text-slate-700 hidden sm:block">
