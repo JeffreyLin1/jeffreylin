@@ -6,19 +6,19 @@
 }
 
 :root {
-  --background: #722f2f;
-  --foreground: #171717;
+  --background: #faf9f5;
+  --foreground: #1c1813;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #12100d;
+    --foreground: #f4ede3;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #faf9f5;
   font-family: Arial, Helvetica, sans-serif;
 }

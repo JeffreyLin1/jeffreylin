@@ -2,14 +2,14 @@
 
 export default function Resume() {
   return (
-    <div className="w-full bg-white font-serif min-h-screen">
+    <div className="w-full bg-[#faf9f5] font-serif min-h-screen">
       {/* Header */}
-      <div className="w-full bg-gradient-to-br from-slate-50 via-slate-100 to-blue-50 py-8">
+      <div className="w-full bg-gradient-to-br from-[#faf9f5] via-[#f3eee4] to-[#ece3d9] py-8">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-800 text-center font-serif">
+          <h1 className="text-4xl md:text-5xl font-bold text-stone-800 text-center font-serif">
             Resume
           </h1>
-          <p className="text-lg md:text-xl text-slate-700 text-center mt-4 font-serif">
+          <p className="text-lg md:text-xl text-stone-700 text-center mt-4 font-serif">
             Jeffrey Lin
           </p>
         </div>
@@ -25,11 +25,11 @@ export default function Resume() {
             className="border-0"
             title="Jeffrey Lin Resume"
           >
-            <p className="text-center text-slate-600 p-8 font-serif">
+            <p className="text-center text-stone-600 p-8 font-serif">
               Your browser does not support PDF viewing. 
               <a 
                 href="/SWE-Jeffrey-Lin-ResumeV2.pdf" 
-                className="text-slate-800 border-b border-slate-400 hover:border-transparent ml-1"
+                className="text-stone-800 border-b border-slate-400 hover:border-transparent ml-1"
                 download
               >
                 Download the resume instead
