@@ -10,7 +10,7 @@ export default function Experiences() {
   return (
     <div className="w-full bg-[#faf9f5] font-serif">
       {/* Main Experiences Section */}
-      <section className="min-h-screen w-full flex flex-col items-center bg-gradient-to-br from-[#faf9f5] via-[#f3eee4] to-[#ece3d9] relative overflow-hidden py-16">
+      <section className="min-h-screen w-full flex flex-col items-center bg-[#faf9f5] relative overflow-hidden py-16">
         
         {/* Navigation Links */}
         <Navigation />

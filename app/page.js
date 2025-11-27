@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="w-full bg-[#faf9f5] font-serif">
       {/* Main Hero Section - Bold Introduction */}
-      <section className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-[#faf9f5] via-[#f3eee4] to-[#eee5d8] relative overflow-hidden">
+      <section className="h-screen w-full flex flex-col items-center justify-center bg-[#faf9f5] relative overflow-hidden">
         
         {/* Navigation Links */}
         <Navigation />
@@ -21,7 +21,7 @@ export default function Home() {
           {/* Profile Image - shown on top for mobile, on left for desktop */}
           <div className="flex-shrink-0 flex justify-center items-center">
             <div className={`relative w-auto h-auto overflow-visible`}>
-              <div className="absolute -inset-2 bg-gradient-to-br from-[#fff4e2] via-[#f6e8d6] to-[#efddc8] rounded-full blur-xl opacity-80 z-0"></div>
+              <div className="absolute -inset-2 bg-[#f3ede1] rounded-full blur-xl opacity-80 z-0"></div>
               <div className="relative z-10">
                 <div className="relative w-[12rem] h-[12rem] md:w-[18rem] md:h-[18rem] rounded-full overflow-hidden">
                   <Image 

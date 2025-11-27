@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className="w-full bg-[#faf9f5] font-serif">
       {/* Main Projects Section */}
-      <section className="min-h-screen w-full flex flex-col items-center bg-gradient-to-br from-[#faf9f5] via-[#f3eee4] to-[#eee5d8] relative overflow-hidden py-10">
+      <section className="min-h-screen w-full flex flex-col items-center bg-[#faf9f5] relative overflow-hidden py-10">
         
         {/* Navigation Links */}
         <Navigation />

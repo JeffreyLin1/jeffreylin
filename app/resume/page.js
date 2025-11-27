@@ -4,7 +4,7 @@ export default function Resume() {
   return (
     <div className="w-full bg-[#faf9f5] font-serif min-h-screen">
       {/* Header */}
-      <div className="w-full bg-gradient-to-br from-[#faf9f5] via-[#f3eee4] to-[#ece3d9] py-8">
+      <div className="w-full bg-[#faf9f5] py-8">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-stone-800 text-center font-serif">
             Resume
