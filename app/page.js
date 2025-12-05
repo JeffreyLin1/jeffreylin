@@ -67,7 +67,7 @@ export default function Home() {
             </p>
             <div className="w-full md:w-auto flex flex-col items-center md:items-start">
               <p className={`text-lg sm:text-xl md:text-2xl text-stone-700 text-center md:text-left font-serif w-full md:w-auto`}>
-                TL;DR:
+                About me:
               </p>
               <div className="w-full max-w-xs md:max-w-none md:w-auto flex flex-col px-4 md:px-0">
                 <p className={`text-lg sm:text-xl md:text-2xl text-stone-700 text-left font-serif`}>
@@ -77,7 +77,7 @@ export default function Home() {
                   - Sold a diff project to a YC startup
                 </p>
                 <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-stone-700 text-left font-serif`}>
-                  - SWE @ a startup that got acquired
+                  - SWE @ YC startup that got acquired
                 </p>
               </div>
             </div>
