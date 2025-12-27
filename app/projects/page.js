@@ -44,7 +44,7 @@ export default function Projects() {
                   
                   <div className="text-base text-stone-700 flex-grow">
                     <p className="mb-2">AI-powered short form content creation platform.</p>
-                    <p><span className="font-medium"> 20M+ views & 200k+ followers generated, 1k+ users, $1k+ MRR </span></p>
+                    <p><span className="font-medium"> 20M+ views & 200k+ followers generated, 1k+ users, $1k+ MRR, sold </span></p>
                   </div>
                   
                   <div className="flex flex-wrap gap-2 mt-3">

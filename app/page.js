@@ -59,25 +59,25 @@ export default function Home() {
             </h1>
             
             {/* Summary about education and internship */}
-            <p className={`text-md sm:text-lg md:text-xl text-stone-600 text-center md:text-left font-serif`}>
-              SYDE @ UWaterloo
-            </p>
             <p className={`text-md sm:text-lg md:text-xl mb-3 sm:mb-6 text-stone-600 text-center md:text-left font-serif`}>
-              SWE intern @ Shopify
+              SYDE @ UWaterloo
             </p>
             <div className="w-full md:w-auto flex flex-col items-center md:items-start">
               <p className={`text-lg sm:text-xl md:text-2xl text-stone-700 text-center md:text-left font-serif w-full md:w-auto`}>
-                About me:
+                Stuff I did before:
               </p>
               <div className="w-full max-w-xs md:max-w-none md:w-auto flex flex-col px-4 md:px-0">
                 <p className={`text-lg sm:text-xl md:text-2xl text-stone-700 text-left font-serif`}>
-                  - Scaled a project to $1k MRR
+                  - Scaled a project to $1k MRR then sold it
                 </p>
                 <p className={`text-lg sm:text-xl md:text-2xl text-stone-700 text-left font-serif`}>
                   - Sold a diff project to a YC startup
                 </p>
+                <p className={`text-lg sm:text-xl md:text-2xl text-stone-700 text-left font-serif`}>
+                  - SWE @ YC startup, acquired
+                </p>
                 <p className={`text-lg sm:text-xl md:text-2xl mb-3 sm:mb-6 text-stone-700 text-left font-serif`}>
-                  - SWE @ YC startup that got acquired
+                  - SWE @ Shopify
                 </p>
               </div>
             </div>
