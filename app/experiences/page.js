@@ -23,7 +23,15 @@ export default function Experiences() {
             <div className="space-y-12 w-full lg:max-w-4xl">
               {/* Shopify Experience */}
               <div className="relative">
-                <div className="border-b border-slate-200 pb-8">
+                <Image
+                  src="/xiaobai.gif"
+                  alt="Xiaobai"
+                  width={80}
+                  height={80}
+                  className="absolute -top-12 right-182"
+                  unoptimized
+                />
+                <div className="pb-8">
                   <div className="flex flex-row gap-4 sm:gap-6 mb-4 sm:mb-0">
                     <div className="w-1/4 sm:w-1/3 lg:w-1/5 flex justify-center flex-shrink-0">
                       <Image
@@ -61,7 +69,7 @@ export default function Experiences() {
               
               {/* Agentnoon (YC W22) Experience */}
               <div className="relative">
-                <div className="border-b border-slate-200 pb-8">
+                <div className="pb-8">
                   <div className="flex flex-row gap-4 sm:gap-6 mb-4 sm:mb-0">
                     <div className="w-1/4 sm:w-1/3 lg:w-1/5 flex justify-center flex-shrink-0">
                       <Image
@@ -97,7 +105,7 @@ export default function Experiences() {
                 </div>
               </div>
               <div className="relative">
-                <div className="border-b border-slate-200 pb-8">
+                <div className="pb-8">
                   <div className="flex flex-row gap-4 sm:gap-6 mb-4 sm:mb-0">
                     <div className="w-1/4 sm:w-1/3 lg:w-1/5 flex justify-center flex-shrink-0">
                       <Image
