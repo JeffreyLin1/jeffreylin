@@ -44,17 +44,6 @@ export default function Home() {
             <h1 className={`text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold mb-2 sm:mb-4 text-stone-800 tracking-tight text-center md:text-left font-serif`}>
               <span className="relative">
                 hi! i'm jeffrey.
-                <span 
-                  className="absolute -top-7 right-36 sm:top-[-40px] sm:left-[145px] sm:right-auto"
-                >
-                  <Image
-                    src="/sleepycat.gif"
-                    alt="Sleepy Cat"
-                    width={90}
-                    height={90}
-                    className="object-contain w-16 h-16 sm:w-[90px] sm:h-[90px]"
-                  />
-                </span>
               </span>
             </h1>
             
