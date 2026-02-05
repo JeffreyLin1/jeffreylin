@@ -115,6 +115,19 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
+              {/* Mobile image shown below the main text */}
+              <div className="md:hidden w-full flex justify-center mt-2 mb-1">
+                <Image
+                  src="/drawJeffrey.png"
+                  alt="Drawing of Jeffrey"
+                  width={220}
+                  height={275}
+                  className="w-52 h-auto"
+                  priority
+                />
+              </div>
+
               {/* Social icons */}
               <div className="mt-4 flex items-center gap-5 text-stone-700">
                 <StreamingText delay={getDelay()}>
