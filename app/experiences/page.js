@@ -54,15 +54,17 @@ export default function Experiences() {
                       <span className="text-xs text-stone-500 sm:hidden">Sept 2025 - Dec 2025</span>
                       
                       <div className="text-base text-stone-700 hidden sm:block">
-                        <p>Working on assistants team, contributing to Sidekick AI</p>
-                        <p>Building a tool to generate synthetic data for LLM training</p>
+                        <p className="mb-1">Worked on Sidekick</p>
+                        <p>Director of ML wanted me specifically to work on automating a feedback loop for our production models' bad performance</p>
+                        <p>Built a synthetic data generation tool to ingest docs and verification scripts to produce high quality training data for ShopifyQL query gen</p>
                       </div>
                     </div>
                   </div>
                   
                   <div className="block sm:hidden text-base text-stone-700">
-                    <p>Working on assistants team, contributing to Sidekick AI</p>
-                    <p>Building a tool to generate synthetic data for LLM training</p>
+                    <p className = "mb-1">Worked on Sidekick</p>
+                    <p>Director of ML wanted me specifically to work on automating a feedback loop for our production models' bad performance</p>
+                    <p>Build a synthetic data generation tool to ingest docs and verification scripts to produce high quality training data for ShopifyQL query gen</p>
                   </div>
                 </div>
               </div>
@@ -83,7 +85,7 @@ export default function Experiences() {
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
-                          <h2 className="text-lg sm:text-2xl font-bold text-stone-800">Agentnoon (YC W22) - Acquired by Dayforce</h2>
+                          <h2 className="text-lg sm:text-2xl font-bold text-stone-800">Agentnoon (YC W22)</h2>
                           <span className="text-sm text-stone-500 hidden sm:inline">Jan 2025 - Apr 2025</span>
                         </div>
                       </div>
@@ -124,17 +126,17 @@ export default function Experiences() {
                         </div>
                       </div>
                       
-                      <p className="text-base text-stone-600 italic mb-1 sm:mb-2">Contract UGC Marketing</p>
+                      <p className="text-base text-stone-600 italic mb-1 sm:mb-2">Marketing</p>
                       <span className="text-xs text-stone-500 sm:hidden">Sep 2025 - Nov 2025</span>
                       
                       <div className="text-base text-stone-700 hidden sm:block">
-                        <p>Posted a bunch of TikToks and reels</p>
+                        <p>Short form content</p>
                       </div>
                     </div>
                   </div>
                   
                   <div className="block sm:hidden text-base text-stone-700">
-                    <p>I posted a bunch of TikToks and reels</p>
+                    <p>Short form content</p>
                   </div>
                 </div>
               </div>
