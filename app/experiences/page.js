@@ -55,16 +55,16 @@ export default function Experiences() {
                       
                       <div className="text-base text-stone-700 hidden sm:block">
                         <p className="mb-1">Worked on Sidekick</p>
-                        <p>Director of ML wanted me specifically to work on automating a feedback loop for our production models' bad performance</p>
-                        <p>Built a synthetic data generation tool to ingest docs and verification scripts to produce high quality training data for ShopifyQL query gen</p>
+                        <p>Worked on automating a feedback loop for our production models' bad performance</p>
+                        <p>Built a synthetic data generation tool to ingest docs and verification scripts to produce high quality training data (ShopifyQL)</p>
                       </div>
                     </div>
                   </div>
                   
                   <div className="block sm:hidden text-base text-stone-700">
                     <p className = "mb-1">Worked on Sidekick</p>
-                    <p>Director of ML wanted me specifically to work on automating a feedback loop for our production models' bad performance</p>
-                    <p>Build a synthetic data generation tool to ingest docs and verification scripts to produce high quality training data for ShopifyQL query gen</p>
+                    <p>Worked on automating a feedback loop for our production models' bad performance</p>
+                    <p>Built a synthetic data generation tool to ingest docs and verification scripts to produce high quality training data (ShopifyQL)</p>
                   </div>
                 </div>
               </div>
